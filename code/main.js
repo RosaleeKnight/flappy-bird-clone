@@ -12,7 +12,7 @@ loadSound("wooosh", "sounds/wooosh.mp3");
 let highScore = 0;
 
 scene("game", () => {
-    const PIPE_GAP = 170;
+    const PIPE_GAP = 160;
     let score = 0;
 
     add([
@@ -41,7 +41,7 @@ scene("game", () => {
             pos(width(), height() / 2 + offset + PIPE_GAP / 2),
             "pipe",
             area(),
-            scale(1.5),
+            scale(2),
             { passed: false }
         ]);
 
@@ -51,7 +51,7 @@ scene("game", () => {
             origin("botleft"),
             "pipe",
             area(),
-            scale(1.5)
+            scale(2)
         ]);
     }
 

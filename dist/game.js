@@ -2920,7 +2920,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   loadSound("wooosh", "sounds/wooosh.mp3");
   var highScore = 0;
   scene("game", () => {
-    const PIPE_GAP = 170;
+    const PIPE_GAP = 160;
     let score = 0;
     add([
       sprite("bg", { width: width(), height: height() })
@@ -2942,7 +2942,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
         pos(width(), height() / 2 + offset + PIPE_GAP / 2),
         "pipe",
         area(),
-        scale(1.5),
+        scale(2),
         { passed: false }
       ]);
       add([
@@ -2951,7 +2951,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
         origin("botleft"),
         "pipe",
         area(),
-        scale(1.5)
+        scale(2)
       ]);
     }
     __name(producePipes, "producePipes");
