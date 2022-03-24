@@ -2942,6 +2942,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
         pos(width(), height() / 2 + offset + PIPE_GAP / 2),
         "pipe",
         area(),
+        scale(1.5),
         { passed: false }
       ]);
       add([
@@ -2949,7 +2950,8 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
         pos(width(), height() / 2 + offset - PIPE_GAP / 2),
         origin("botleft"),
         "pipe",
-        area()
+        area(),
+        scale(1.5)
       ]);
     }
     __name(producePipes, "producePipes");

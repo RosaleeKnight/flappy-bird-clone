@@ -41,6 +41,7 @@ scene("game", () => {
             pos(width(), height() / 2 + offset + PIPE_GAP / 2),
             "pipe",
             area(),
+            scale(1.5),
             { passed: false }
         ]);
 
@@ -49,7 +50,8 @@ scene("game", () => {
             pos(width(), height() / 2 + offset - PIPE_GAP / 2),
             origin("botleft"),
             "pipe",
-            area()
+            area(),
+            scale(1.5)
         ]);
     }
 
