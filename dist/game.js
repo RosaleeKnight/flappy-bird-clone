@@ -2988,6 +2988,9 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
     add([
       text("gameover!\nscore: " + score + "\nhigh score: " + highScore, { size: 45 })
     ]);
+    onClick(() => {
+      go("game");
+    });
     keyPress("space", () => {
       go("game");
     });

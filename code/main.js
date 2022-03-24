@@ -16,11 +16,11 @@ scene("game", () => {
     let score = 0;
 
     add([
-        sprite("bg", {width: width(), height: height()})
-      ]);
+        sprite("bg", { width: width(), height: height() })
+    ]);
 
     const scoreText = add([
-        text(score, {size: 50})
+        text(score, { size: 50 })
     ]);
 
     // add a game object to screen
@@ -33,20 +33,20 @@ scene("game", () => {
         body(),
     ]);
 
-  function producePipes(){
+    function producePipes() {
         const offset = rand(-50, 50);
 
         add([
             sprite("pipe"),
-            pos(width(), height()/2 + offset + PIPE_GAP/2),
+            pos(width(), height() / 2 + offset + PIPE_GAP / 2),
             "pipe",
             area(),
-            {passed: false}
+            { passed: false }
         ]);
 
         add([
-            sprite("pipe", {flipY: true}),
-            pos(width(), height()/2 + offset - PIPE_GAP/2),
+            sprite("pipe", { flipY: true }),
+            pos(width(), height() / 2 + offset - PIPE_GAP / 2),
             origin("botleft"),
             "pipe",
             area()
@@ -61,9 +61,9 @@ scene("game", () => {
         pipe.move(-160, 0);
 
         if (pipe.passed === false && pipe.pos.x < player.pos.x) {
-        pipe.passed = true;
-        score += 1;
-        scoreText.text = score;
+            pipe.passed = true;
+            score += 1;
+            scoreText.text = score;
         }
     });
 
@@ -73,15 +73,15 @@ scene("game", () => {
 
     player.action(() => {
         if (player.pos.y > height() + 30 || player.pos.y < -30) {
-        go("gameover", score);
+            go("gameover", score);
         }
     });
 
     onClick(() => {
-	    play("wooosh");
+        play("wooosh");
         player.jump(400);
     })
-    
+
     keyPress("space", () => {
         play("wooosh");
         player.jump(400);
@@ -98,10 +98,14 @@ scene("gameover", (score) => {
             "gameover!\n"
             + "score: " + score
             + "\nhigh score: " + highScore,
-            {size: 45}
+            { size: 45 }
         )
     ]);
 
+    onClick(() => {
+        go("game");
+    });
+    
     keyPress("space", () => {
         go("game");
     });
