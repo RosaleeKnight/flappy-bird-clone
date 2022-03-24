@@ -1,6 +1,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/RosaleeKnight/flappy-bird-clone)
 ![GitHub language count](https://img.shields.io/github/languages/count/RosaleeKnight/flappy-bird-clone)
-![GitHub](https://img.shields.io/github/license/RosaleeKnight/flappy-bird-clone)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/RosaleeKnight/flappy-bird-clone)
+![GitHub](https://img.shields.io/github/license/RosaleeKnight/pong-clone)
 ![GitHub issues](https://img.shields.io/github/issues/RosaleeKnight/flappy-bird-clone)
 [![HitCount](https://hits.dwyl.com/RosaleeKnight/flappy-bird-clone.svg?style=flat)](http://hits.dwyl.com/RosaleeKnight/flappy-bird-clone)
 
