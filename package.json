@@ -2,7 +2,7 @@
 	"name": "kaboom-env",
 	"dependencies": {
 		"@replit/database": "^2.0.5",
-		"esbuild": "^0.18.14",
+		"esbuild": "^0.18.15",
 		"express": "^4.18.2",
 		"kaboom": "^2000.2.10",
 		"stacktrace-js": "^2.0.2",
