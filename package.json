@@ -3,7 +3,7 @@
 	"dependencies": {
 		"@replit/database": "^2.0.5",
 		"esbuild": "^0.23.1",
-		"express": "^4.21.1",
+		"express": "^4.21.2",
 		"kaboom": "^2000.2.10",
 		"stacktrace-js": "^2.0.2",
 		"ws": "^8.18.0"
